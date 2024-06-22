@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+CO:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+   background-color: black;
+   padding: 8px;
+   position: sticky;
+   top:0;
+   z-index: 1000;
+}
+#navbar ul{
+    display: flex;
+    flex-direction:  row;
+}
+#navbar ul h2{
+    color: white;
+    padding: 2px;
+    font-family: "Roboto Mono", monospace;
+}
+#navbar ul img{
+     height: 40px;
+     padding: 0 20px;
+     filter: invert(1);
+}
+#navbar ul h2:hover{
+    color: red;
+    cursor: pointer;
+}
+#navbar ul img:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#navbar ul div{
+    display: flex;
+    flex-direction: row;
+}
+#navbar li{
+    list-style: none;
+    padding: 5px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    font-size: large;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+#navbar li a:hover{
+    color: red;
+}
+#introSection {
+    background: url(../static/bg.jpg)  no-repeat center/cover ;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    opacity: 0.84;
+    height: 350px;
+    color: white;
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#introSection div#fir{
+    margin-top: 130px;
+}
+#introSection div#sec{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+}
+#teach::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../static/back.jpg)  no-repeat center/cover ;
+    z-index: -1;
+    opacity: 0.8;
+   
+}
+#teach{
+    position: relative;
+    height: 340px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: "PT Serif", serif;
+    
+}
+
+#box2{
+    height: 7px;
+}
+#box1{
+    height: 5px;
+    background-color: gray;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+#container .box{
+    height: 250px;
+    width: 290px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#teach h2{
+    padding: 20px 0;
+   font-size: 2rem;
+}
+#container .box img{
+    width: 250px;
+    height: 200px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+#follow{
+    height: 200px;
+    text-align: center;   
+}
+#follow h3{
+    margin-top: 30px;
+    font-family: "PT Serif", serif;
+}
+#follow h2{
+    font-size: 2rem;
+    font-family: "PT Serif", serif;
+}
+#follow img{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+#follow img:hover{
+    cursor: pointer;
+}
+#newsletter{
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+#newsletter p{
+    font-size: 2.5rem;
+    margin-top: 43px;
+    margin-left: 60px;
+    font-family: "PT Serif", serif;
+    
+}
+#newsletter input{
+    height: 20px;
+    width: 35%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 28px;
+}
+#newsletter .btn{
+    border-radius: 10px;
+    height: 40.8px;
+    width: 100px;
+    margin: 52px 25px;
+    border: 2px solid white;
+}
+#newsletter .btn:hover{
+    background-color: black;
+    color: white;
+}
+#office{
+    height: 400px;
+    background-color: rgb(45, 46, 46);
+    display: flex;
+    flex-direction: row;
+    color: yellow;
+    font-family: "PT Serif", serif;
+}
+#office img{
+    width: 30px;
+    height: 20px;
+    filter: invert(1);
+    padding: 0 5px;
+}
+#office .about, .delhiOffice, .mumbaiOffice, .inquiry{
+    margin: 10px;
+    padding: 15px;
+}
+#office p{
+    margin: 20px 0;
+    color: white;
+    line-height: 30px;
+}
+#office .about img{
+    margin-top: 5px;
+}
+#office .about img:hover{
+   cursor: pointer;
+}
+#office form{
+    padding: 20px 0;
+}
+#office form input{
+    background-color: rgb(45, 46, 46);
+    color: white;
+    text-align: center;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 5px;
+    width: 85%;
+}
+#office form button{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 5px;
+    width: 85%;
+}
+#office form button:hover{
+    background-color: rgb(162, 162, 31);
+    color: white;
+}
+#office .terms{
+    color: yellow;
+}
+#office .img1 p{
+    margin-top: 0;
+}
+#office .img2 p{
+    margin-top: 0;
+}
+#office .img1, .img2{
+    display: flex;
+    flex-direction: row;
+}
+#office .delhiOffice img{
+   margin-top: 5px;
+   margin-right: 7px;
+}
+#office .mumbaiOffice p{
+    line-height:48px ;
+
+}
+#box3{
+    height: 2px;
+}
+#footer{
+    background-color: black;
+    height: 30px;
+    color: white;
+    text-align: center;
+    font-family: "PT Serif", serif;
+}

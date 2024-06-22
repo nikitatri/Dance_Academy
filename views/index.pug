@@ -1,0 +1,84 @@
+//- index.pug
+doctype html
+html
+  head
+   title NDA
+   style 
+    include ../static/style.css
+  body
+    nav#navbar 
+      ul 
+        div#img
+         img(src="../static/logo1.png", alt="this is logo")
+         h2  NDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Contact]
+        li #[a(href="/") Career]
+        li #[a(href="/") Login]
+        li #[a(href="/") Register]
+    div#box1
+    section#introSection 
+       div#fir Welcome to Nikita Dance Academy 
+       div#sec Dance like no one is going to take you away
+    div#box2 
+    section#teach
+       h2 What we teach!
+       div#container
+         div.box  Salsa
+           img(src="../static/salsa.jpg", alt="")
+         div.box Jazz 
+           img(src="../static/jazz.jpg", alt="")
+         div.box Traditional 
+           img(src="../static/traditional.jpg", alt="")
+         div.box Bollywood 
+           img(src="../static/bolly.jpg", alt="")
+    
+    section#follow 
+       h3 FOLLOW US ON 
+       h2 SOCIAL MEDIA 
+       img(src="../static/face.jpeg", alt="")
+       img(src="../static/insta.jpeg", alt="")
+       img(src="../static/snap.jpeg", alt="")
+       img(src="../static/twitter.png", alt="")
+
+    section#newsletter 
+      p Subscribe to Our Newsletter 
+      input(type="email", name="email" placeholder="Enter your Email")
+      button.btn Submit Now
+    section#office 
+     div.about
+       h3 ABOUT NDA
+       p The Nikita Dance Academy comprises of the Dance Academy and Dance Students Repertory Company.
+       h3 FOLLOW US 
+       img(src="../static/face.jpeg", alt="")
+       img(src="../static/insta.jpeg", alt="")
+       img(src="../static/snap.jpeg", alt="")
+       img(src="../static/twitter.png", alt="")
+       p.terms Terms &amp Condition | Privacy Policy | Disclaimer | FAQ
+     div.delhiOffice
+       h3 NEW DELHI OFFICE  
+       p The NDA, C-2, Creche Plot, Sushant Lok Phase 1, Near Vyapar Kendra, Gurgaon - 122 002, Haryana, India.
+       div.img1
+        img(src="../static/phone.png", alt="")
+        p.phone (+91)9580159674
+       div.img2
+        img(src="../static/email.jpeg", alt="")
+        p.mail nikitatripathi123456@gmail.com
+     div.mumbaiOffice 
+       h3 MUMBAI OFFICE 
+       p The NDA, 314, Laxmi Business Park, Laxmi Industrial estate, New Link Road, Andheri West, Mumbai - 400053, Maharastra, India.
+     div.inquiry
+       h3 QUICK INQUIRY
+       form(action="/")
+        input(type="name", placeholder="Enter name") 
+        input(type="age", placeholder="Enter age")
+        input(type="email", name="email", placeholder="Enter email address")
+        input(type="number", name="number", placeholder="Enter mobile number")
+        button#btn SUBMIT
+    div#box3
+    section#footer 
+     div Copyright &copy 2019 NikitaDanceAcademy.com| All rights reserved.
+    script 
+       include ../static/index.js
+    
